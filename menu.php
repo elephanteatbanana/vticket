@@ -24,14 +24,14 @@
 <body>
     <div id="menu-header-logo">
         <a href="menu.php"><img src="category/images/logo.png" alt="logo"></a>
-        
+
         <div class="menu-header-logo-icons">
             <a class="header-logo-icon" href="myPage.php"><i class="fas fa-user"></i></a>
             <div class="header-logo-icon" id="signoutBt">
                 <i class="fas fa-sign-out-alt"></i>
             </div>
         </div>
-        
+
     </div>
 
     <div class="menu-category">
