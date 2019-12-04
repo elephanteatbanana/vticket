@@ -22,7 +22,71 @@
 </head>
 
 <body>
+    <header></header>
+    <div class="home-main">
+        <div class="home-main-media-container">
+            <div class="home-main-media-content">
+                <img src="category/images/background-sunset.png" alt="Vancouver Downtown landscape">
+                <video src="video/background_sunset_video.mp4" autoplay muted loop></video>
+            </div>
+            <div class="home-main-media-overlay-container">
+                <div class="home-main-media-overlay-content">
+                    <h1>Sign In and Enjoy Booking</h1>
+                    <!-- Sign In -->
+                    <div id="signInWindow">
+                        <div>
+                            <label for="username"></label>
+                            <input type="text" id="emailId" placeholder="Email" name="username">
+                        </div>
 
+                        <div>
+                            <label for="password"></label>
+                            <input type="password" id="passwordId" placeholder="Password" name="password" >
+                        </div>
+                        <input type="submit" value="Go ticketing" id="loginBt">
+                        <div id="loginMessage"></div>
+                        <div id="createAccountBt">Create Account</div>
+                        <div id="forgotpassBt">Forgot your password?</div>
+                    </div>
+
+                    <!-- Sign Up -->
+                    <div id="signUpWindow">
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" placeholder="Email" id="signUpemailId" name="email">
+                        </div>
+                        <div>
+                            <label for="username"></label>
+                            <input type="text" placeholder="Name" id="signUpnameId" name="name">
+                        </div>
+                        <div>
+                            <label for="password"></label>
+                            <input type="password" placeholder="Password" id="signUppassword" name="password" minlength="8"
+                                required>
+                        </div>
+                        <div>
+                            <label for="rePassword"></label>
+                            <input type="password" placeholder="Re-Password" id="signUpRepassword" name="rePassword">
+                        </div>
+                        <div id="signUpMessage"></div>
+                        <div id="signupBt">Sign up</div>
+
+                    </div>
+
+                    <!-- Reset Password -->
+                    <div id="forgotPassword">
+                        <div>
+                            <label for="email"></label>
+                            <input type="text" placeholder="Email" id="forgotPasswordEmail" name="email">
+                        </div>
+                        <div id="forgetPasswordMessage"></div>
+                        <div id="forgotPasswordResetBt">Reset Password</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
 </body>
 
 </html>
