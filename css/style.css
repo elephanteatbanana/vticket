@@ -18,7 +18,15 @@ footer{
     margin-top: 100px;
 
 }
-
+#header-logo{
+    height: 80px;
+    background-color: white;
+}
+#header-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #loginMessage{
     display:none;
 }
@@ -60,6 +68,65 @@ div#signupBt{
     font-weight: bold;
     width: 80%;
     margin: auto;
+}
+.home-main{
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+.wrap{
+    max-width: 960px;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+
+}
+.home-main-media-content{
+    top:100px;
+    left:0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+
+}
+
+.home-main-media-content video{
+    display: none;
+}
+.home-main-media-content img{
+    width: 100%;
+    display: block;
+}
+.home-main-media-overlay-content{
+    border: 1.5px solid ;
+    box-shadow: 1px 2px #888888;
+    background-color: rgb(248, 246, 246);
+    border-radius: 10px;
+    padding : 10px;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.card{
+    margin-top: 30px;
+    border-top: 2px solid #009973;
+    width: 90%;
+    margin: auto;
+}
+.card p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-image{
+    width: 100%;
+}
+.footer-content{
+    height: 150px;
+    width: 100%;
+    background-color:#009973;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /* mobile-landscape */
 @media screen and (min-width: 480px) {
