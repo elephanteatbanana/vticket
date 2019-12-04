@@ -1,5 +1,66 @@
+body{
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 10rem;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h3{
+    font-size: 1.5rem;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    margin-top: 100px;
 
+}
 
+#loginMessage{
+    display:none;
+}
+#signInWindow{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-table;
+
+}
+#signInWindow div{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#createAccountBt{
+    text-decoration: underline;
+}
+#forgotpassBt{
+    text-decoration: underline;
+}
+div#signupBt{
+    text-decoration: underline;
+}
+#forgotPasswordResetBt{
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+
+#signUpWindow{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+#forgotPassword{
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#forgetPasswordMessage{
+    padding-top: 1rem;
+    color: red;
+    font-weight: bold;
+    width: 80%;
+    margin: auto;
+}
 /* mobile-landscape */
 @media screen and (min-width: 480px) {
 
