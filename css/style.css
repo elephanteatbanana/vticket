@@ -21,7 +21,7 @@ footer {
     height: 2.5rem;
     margin-top: 100px;
 }
-/* IDs */
+/* home.html */
 #header-logo {
     height: 80px;
     background-color: white;
@@ -81,7 +81,6 @@ div#signupBt {
     width: 80%;
     margin: auto;
 }
-/* home.html */
 
 .home-main {
     width: 100%;
@@ -242,6 +241,65 @@ div#signupBt {
     border-radius: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+}
+/* category concert.php,local.php, sport.php, art.php  */
+
+#catPanel h3{
+    margin-left: 2rem;
+}
+.cat-sort-container{
+    margin-left: 2rem;
+}
+.category-list-ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.category-list-ul li a{
+    color:#009973;
+    text-decoration: none;
+    display: contents;
+    
+}
+.category-list-ul li a p{
+    text-align: center;
+    
+}
+.category-list-ul li a p:nth-child(1){
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 600;
+}
+.category-list-ul li a p:nth-child(2){
+    font-size: 1rem;
+    color: #898d8c;
+
+ 
+}
+.category-list-ul li a p:nth-child(3){
+    font-size: 0.9rem;
+    color: #009973;
+
+ 
+}
+.category-list-ul li a p:nth-child(4){
+    font-size: 0.8rem;
+    color: #009973;
+   
+}
+.category-list-ul .category-event{
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    padding-top: 1rem;
+}
+.category-list-ul .category-event img{
+    width: 30%;
+    height: auto;
+}
+.category-list-ul .category-event li{
+    width: 70%; 
 }
 /* footer */
 .footer-content {
