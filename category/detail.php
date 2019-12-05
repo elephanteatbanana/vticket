@@ -42,7 +42,141 @@ require 'includes/vticket.db.php';
         <!--Content container -->
         <div id="catPanel" class="panel">
             <div class="detail-window">
-                
+                <?php
+                // get id from URL
+                if (!isset($_GET['id'])) {
+                    echo "Invalid url";
+                } else {
+                    $page_id = $_GET['id'];
+                    try {
+                        // get cat from URL
+                        if (!isset($_GET['cat'])) {
+                            throw new Exception('Invalid url');
+                        } elseif (!is_numeric($page_id)) {
+                            //SQL injection prevention : ID must be numeric only
+                            throw new Exception('Invalid url');
+                        }
+                        //SQL injection prevention : The value of 'cat' must be valid
+                        $categoryUrl = mysqli_real_escape_string($conn, $_GET['cat']);
+                        // switch by category
+                        switch ($categoryUrl) {
+                            case "spo":
+                                //check if id is valid
+                                $idChecker = "SELECT id FROM sports WHERE id = '$page_id' ";
+                                $idChecker_sql = mysqli_query($conn, $idChecker);
+                                if (mysqli_num_rows($idChecker_sql) == 0) {
+                                    throw new Exception('Invalid url');
+                                } else {
+                                    $selected_query = "SELECT * FROM sports WHERE id='$page_id' ";
+                                    $detail_sql = mysqli_query($conn, $selected_query);
+                                    $row = mysqli_fetch_array($detail_sql);
+                                    // building HTML for the requested content
+                                    echo "<div class='detail-event-image-container'>";
+                                    echo '<img class="detail-event-image" src="' . $row["Image_dir"] . '" alt="Failed to load the image">';
+                                    echo "</div>";
+                                    echo "<div class='detail-event-title-container'>";
+                                    echo "<h3>";
+                                    echo $row['title'];
+                                    echo "</h3>";
+                                    echo "<h4>";
+                                    echo $row['location'];
+                                    echo "</h4>";
+                                    echo "<h4>";
+                                    echo $row['date'];
+                                    echo "</h4>";
+                                    echo "</div>";
+                                }
+                                break;
+                            case "con":
+                                //check if id is valid
+                                $idChecker = "SELECT id FROM concerts WHERE id = '$page_id' ";
+                                $idChecker_sql = mysqli_query($conn, $idChecker);
+                                if (mysqli_num_rows($idChecker_sql) == 0) {
+                                    throw new Exception('Invalid url');
+                                } else {
+                                    // building HTML for the requested content
+                                    $selected_query = "SELECT * FROM concerts WHERE id='$page_id' ";
+                                    $detail_sql = mysqli_query($conn, $selected_query);
+                                    $row = mysqli_fetch_array($detail_sql);
+                                    echo "<div class='detail-event-image-container'>";
+                                    echo '<img class="detail-event-image" src="' . $row["Image_dir"] . '" alt="Failed to load the image">';
+                                    echo "</div>";
+                                    echo "<div class='detail-event-title-container'>";
+                                    echo "<h3>";
+                                    echo $row['title'];
+                                    echo "</h3>";
+                                    echo "<h4>";
+                                    echo $row['location'];
+                                    echo "</h4>";
+                                    echo "<h4>";
+                                    echo $row['date'];
+                                    echo "</h4>";
+                                    echo "</div>";
+                                }
+                                break;
+                            case "loc":
+                                //check if id is valid
+                                $idChecker = "SELECT id FROM locals WHERE id = '$page_id' ";
+                                $idChecker_sql = mysqli_query($conn, $idChecker);
+                                if (mysqli_num_rows($idChecker_sql) == 0) {
+                                    throw new Exception('Invalid url');
+                                } else {
+                                    $selected_query = "SELECT * FROM locals WHERE id='$page_id' ";
+                                    $detail_sql = mysqli_query($conn, $selected_query);
+                                    $row = mysqli_fetch_array($detail_sql);
+                                    // building HTML for the requested content
+                                    echo "<div class='detail-event-image-container'>";
+                                    echo '<img class="detail-event-image" src="' . $row["Image_dir"] . '" alt="Failed to load the image">';
+                                    echo "</div>";
+                                    echo "<div class='detail-event-title-container'>";
+                                    echo "<h3>";
+                                    echo $row['title'];
+                                    echo "</h3>";
+                                    echo "<h4>";
+                                    echo $row['location'];
+                                    echo "</h4>";
+                                    echo "<h4>";
+                                    echo $row['date'];
+                                    echo "</h4>";
+                                    echo "</div>";
+                                }
+
+                                break;
+                            case "art":
+                                //check if id is valid
+                                $idChecker = "SELECT id FROM arts WHERE id = '$page_id' ";
+                                $idChecker_sql = mysqli_query($conn, $idChecker);
+                                if (mysqli_num_rows($idChecker_sql) == 0) {
+                                    throw new Exception('Invalid url');
+                                } else {
+                                    $selected_query = "SELECT * FROM arts WHERE id='$page_id' ";
+                                    $detail_sql = mysqli_query($conn, $selected_query);
+                                    $row = mysqli_fetch_array($detail_sql);
+                                    // building HTML for the requested content
+                                    echo "<div class='detail-event-image-container'>";
+                                    echo '<img class="detail-event-image" src="' . $row["Image_dir"] . '" alt="Failed to load the image">';
+                                    echo "</div>";
+                                    echo "<div class='detail-event-title-container'>";
+                                    echo "<h3>";
+                                    echo $row['title'];
+                                    echo "</h3>";
+                                    echo "<h4>";
+                                    echo $row['location'];
+                                    echo "</h4>";
+                                    echo "<h4>";
+                                    echo $row['date'];
+                                    echo "</h4>";
+                                    echo "</div>";
+                                }
+                                break;
+                            default:
+                                echo "Access Denied!";
+                        }
+                    } catch (Execption $e) {
+                        echo $e->getMessage();
+                    }
+                }
+?>
             </div>
         </div>
     </div>
