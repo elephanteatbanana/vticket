@@ -176,8 +176,16 @@ require 'includes/vticket.db.php';
                         echo $e->getMessage();
                     }
                 }
-?>
+                ?>
             </div>
+            <div class="detail-bookingbt-container">
+                <button id="bookBt" class="notBooked"></button>
+            </div>
+            <?php
+            echo "<div class='description'>";
+            echo $row['description'];
+            echo "</div>";
+            ?>
         </div>
     </div>
 </body>
