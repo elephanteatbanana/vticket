@@ -189,4 +189,5 @@ require 'includes/vticket.db.php';
         </div>
     </div>
 </body>
+<script src="../javascript/init-firebase.js"></script>
 </html>
