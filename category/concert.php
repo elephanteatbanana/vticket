@@ -87,4 +87,6 @@ require 'includes/vticket.db.php';
         </div>  
     </footer> 
 </body>
+<script src="../javascript/init-firebase.js"></script>
+<script src="../javascript/concert.js"></script>
 </html>
