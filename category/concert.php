@@ -37,15 +37,15 @@ require 'includes/vticket.db.php';
     <div>
         <!--Nav-->
         <ul id="listTab" class="menu-category">
-            <li class="menu-category-name concertsTab active" rel="concertsPanel"> <a href="concert.php">Concerts</a></li>
+            <li class="menu-category-name concertsTab" rel="concertsPanel"> <a href="concert.php">Concerts</a></li>
             <li class="menu-category-name sportsTab" rel="sportsPanel"> <a href="sport.php">Sports</a></li>
             <li class="menu-category-name artsTab" rel="artsPanel"> <a href="art.php">Arts</a></li>
             <li class="menu-category-name localTab" rel="localPanel"> <a href="local.php">Local</a></li>
         </ul>
         <!--Content container -->
-        <div id="catPanel" class="panel active">
+        <div id="catPanel" class="panel">
             <h3>Concerts</h3>
-            <div>
+            <div class="cat-sort-container">
                 <!--Sort by -->
                 <select name="selectCat" class="cat-sort-select" onchange="sortBy(this.value)">
                     <option value="">Default</option>
