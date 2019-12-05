@@ -1,3 +1,4 @@
+/* Generic */
 body {
     margin: 0;
     position: relative;
@@ -20,7 +21,7 @@ footer {
     height: 2.5rem;
     margin-top: 100px;
 }
-
+/* IDs */
 #header-logo {
     height: 80px;
     background-color: white;
@@ -80,6 +81,7 @@ div#signupBt {
     width: 80%;
     margin: auto;
 }
+/* home.html */
 
 .home-main {
     width: 100%;
@@ -135,7 +137,32 @@ div#signupBt {
 .card-image {
     width: 100%;
 }
+/* menu.php*/
 
+.fas{
+    font-size: 2rem;
+    color: lightseagreen;
+    margin-right: 1rem;
+}
+#menu-header-logo{
+    height: 80px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-header-logo-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-logo-icon{
+    width:10%;
+    display: contents;
+}
+
+/* footer */
 .footer-content {
     height: 150px;
     width: 100%;
