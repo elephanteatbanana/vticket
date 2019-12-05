@@ -30,6 +30,40 @@
             </div>
         </div>
     </div>
-    
+    <!--Main-->
+    <div>
+        <!--Nav-->
+        <ul id="listTab" class="menu-category">
+            <li class="menu-category-name concertsTab active" rel="concertsPanel"> <a href="concert.php">Concerts</a></li>
+            <li class="menu-category-name sportsTab" rel="sportsPanel"> <a href="sport.php">Sports</a></li>
+            <li class="menu-category-name artsTab" rel="artsPanel"> <a href="art.php">Arts</a></li>          
+            <li class="menu-category-name localTab" rel="localPanel"> <a href="local.php">Local</a></li>
+        </ul>
+        <!--Content container -->
+        <div id="concertsPanel" class="panel active">
+            <h3>Concerts</h3>
+            <div>
+                <!--Sort by -->
+                <select name="" id="">
+                    <option value="">Default</option>
+                    <option value="namea">By Name(A-Z)</option>
+                    <option value="namez">By Name(Z-A)</option>
+                    <option value="new">Newest First</option>
+                    <option value="old">Oldest First</option>   
+                </select>
+            </div>
+            <div id="cat-sort-result">
+                <?php
+                ?>
+            </div>
+            <button>Load More</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>By continuing past this page, you agree to our Terms of Use.</p>
+            <p>Privacy Policy | 2019 Vticket. All rights reserved.</p>
+        </div>  
+    </footer> 
 </body>
 </html>
