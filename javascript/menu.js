@@ -13,7 +13,7 @@ signoutButton.addEventListener('click', e => {
 
 //status change
 
-firbase.auth().onAuthStateChanged(function (user) {
+firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         console.log("User is in");
     } else {
