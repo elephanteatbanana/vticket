@@ -161,6 +161,33 @@ div#signupBt {
     width:10%;
     display: contents;
 }
+.menu-main{
+    padding-left: 1rem;
+}
+.menu-category{
+    padding-inline-start: 0px;
+    background-color: lightseagreen;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu-category-name{
+    
+    width: 25%;
+}
+.menu-category-name a{
+    display: block;
+    color: white;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: Averta,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.menu-category-name a:hover{
+    color:purple;
+}
 
 /* footer */
 .footer-content {
