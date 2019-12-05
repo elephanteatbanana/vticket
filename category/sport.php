@@ -45,7 +45,7 @@ require 'includes/vticket.db.php';
         <!--Content container -->
         <div id="catPanel" class="panel">
             <h3>Sports</h3>
-            <div>
+            <div class="cat-sort-container">
                 <!--Sort by -->
                 <select name="selectCat" class="cat-sort-select" onchange="sortBy(this.value)">
                     <option value="">Default</option>
