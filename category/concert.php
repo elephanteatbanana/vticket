@@ -1,3 +1,6 @@
+<?php
+require 'includes/vticket.db.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,11 +43,11 @@
             <li class="menu-category-name localTab" rel="localPanel"> <a href="local.php">Local</a></li>
         </ul>
         <!--Content container -->
-        <div id="concertsPanel" class="panel active">
+        <div id="catPanel" class="panel active">
             <h3>Concerts</h3>
             <div>
                 <!--Sort by -->
-                <select name="" id="">
+                <select name="selectCat" class="cat-sort-select">
                     <option value="">Default</option>
                     <option value="namea">By Name(A-Z)</option>
                     <option value="namez">By Name(Z-A)</option>
@@ -54,6 +57,24 @@
             </div>
             <div id="cat-sort-result">
                 <?php
+                /* fetch only 4 pieces of data from 'concerts' */
+                $query= 'SELECT * FROM `concerts` ORDER BY id LIMIT 4';
+                if ($is_query_run = mysqli_query($conn, $query)) {
+                    echo '<ul class="category-list-ul">';
+                    while ($row = mysqli_fetch_assoc($is_query_run)) {
+                        echo '<div class="category-event">';
+                        $date=date_create($row['date']);
+                        $mdy = date_format($date, "M d, D, Y");
+                        $hm = date_format($date, "h:m")." PM";
+                        echo '<img src="'.$row["Image_dir"].'" alt=""><li><a href="detail.php?cat=con&id='.$row["id"].'"><p class="cat-title">'.$row["title"].'</p><p class="cat-location">'. $row["location"].'</p><p class="cat-mdy">'. $mdy.'</p><p class="cat-hm">'.$hm.'</p></a></li>';
+                        echo '</div>';
+                    }
+                    echo '</ul>';
+                    /* free result set */
+                    mysqli_free_result($is_query_run);
+                } else {
+                    echo "query not executed";
+                }
                 ?>
             </div>
             <button>Load More</button>
