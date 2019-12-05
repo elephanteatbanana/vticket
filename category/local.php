@@ -6,7 +6,7 @@ require 'includes/vticket.db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vancouver's Best Ticket Booking : locals</title>
+    <title>Vancouver's Best Ticket Booking : Local</title>
 
     <!-- Firebase setting -->
     <script  src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
@@ -44,8 +44,8 @@ require 'includes/vticket.db.php';
         </ul>
         <!--Content container -->
         <div id="catPanel" class="panel">
-            <h3>Locals</h3>
-            <div>
+            <h3>Local</h3>
+            <div class="cat-sort-container">
                 <!--Sort by -->
                 <select name="selectCat" class="cat-sort-select" onchange="sortBy(this.value)">
                     <option value="">Default</option>
