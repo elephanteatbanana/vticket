@@ -164,6 +164,7 @@ div#signupBt {
     padding-left: 1rem;
 }
 .menu-category{
+    list-style-type: none;
     padding-inline-start: 0px;
     background-color: lightseagreen;
     width: 100%;
@@ -246,6 +247,12 @@ div#signupBt {
 
 #catPanel h3{
     margin-left: 2rem;
+}
+.panel{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .cat-sort-container{
     margin-left: 2rem;
