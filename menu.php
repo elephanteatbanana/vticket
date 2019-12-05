@@ -1,3 +1,7 @@
+<?php
+require 'category/includes/vticket.db.php';
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -67,7 +71,7 @@
                 <a href="category/sport.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
-                
+
             </div>
         </div>
         <div class="menu-cat-tab">
@@ -76,7 +80,7 @@
                 <a href="category/art.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
-                
+
             </div>
         </div>
         <div class="menu-cat-tab">
@@ -85,7 +89,7 @@
                 <a href="category/local.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
-                
+
             </div>
         </div>
     </div>
