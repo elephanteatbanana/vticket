@@ -62,6 +62,31 @@ require 'category/includes/vticket.db.php';
                 <a href="category/concert.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
+                <?php
+                /* fetching data from 'concerts' table */
+                $query= 'SELECT * FROM `concerts`';
+                if($is_query_run = mysqli_query($conn,$query)){
+                    echo '<div class="menu-cat-content">';
+                    $i = 0;
+                    while ($row = mysqli_fetch_assoc($is_query_run)) {
+                        if($i < 6){
+                            echo '<div class="menu-cat-content-container"> ';
+                            echo '<a href="category/detail.php?cat=con&id='.$row["id"].'"><img src="category/'.$row["Image_dir"].'" alt=""></a>';
+                            echo '<div class="menu-cat-content-text-container">';
+                            echo '<div class="menu-cat-content-text">'.$row["title"];
+                            echo '</div> ';
+                            echo '</div> ';
+                            echo '</div> ';
+                        }
+                        $i++;
+                    }
+                    echo '</div>';
+                    /* free result set */
+                    mysqli_free_result($is_query_run);
+                }else{
+                    echo "query not executed";
+                }
+                ?>
 
             </div>
         </div>
@@ -71,6 +96,31 @@ require 'category/includes/vticket.db.php';
                 <a href="category/sport.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
+                <?php
+                /* fetching data from 'sports' table */
+                $query= 'SELECT * FROM `sports`';
+                if($is_query_run = mysqli_query($conn,$query)){
+                    echo '<div class="menu-cat-content">';
+                    $i = 0;
+                    while ($row = mysqli_fetch_assoc($is_query_run)) {
+                        if($i < 6){
+                            echo '<div class="menu-cat-content-container"> ';
+                            echo '<a href="category/detail.php?cat=spo&id='.$row["id"].'"><img src="category/'.$row["Image_dir"].'" alt=""></a>';
+                            echo '<div class="menu-cat-content-text-container">';
+                            echo '<div class="menu-cat-content-text">'.$row["title"];
+                            echo '</div> ';
+                            echo '</div> ';
+                            echo '</div> ';
+                        }
+                        $i++;
+                    }
+                    echo '</div>';
+                    /* free result set */
+                    mysqli_free_result($is_query_run);
+                }else{
+                    echo "query not executed";
+                }
+                ?>
 
             </div>
         </div>
@@ -80,7 +130,31 @@ require 'category/includes/vticket.db.php';
                 <a href="category/art.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
-
+                <?php
+                /* fetching data from 'concerts' table */
+                $query= 'SELECT * FROM `arts`';
+                if($is_query_run = mysqli_query($conn,$query)){
+                    echo '<div class="menu-cat-content">';
+                    $i = 0;
+                    while ($row = mysqli_fetch_assoc($is_query_run)) {
+                        if($i < 6){
+                            echo '<div class="menu-cat-content-container"> ';
+                            echo '<a href="category/detail.php?cat=art&id='.$row["id"].'"><img src="category/'.$row["Image_dir"].'" alt=""></a>';
+                            echo '<div class="menu-cat-content-text-container">';
+                            echo '<div class="menu-cat-content-text">'.$row["title"];
+                            echo '</div> ';
+                            echo '</div> ';
+                            echo '</div> ';
+                        }
+                        $i++;
+                    }
+                    echo '</div>';
+                    /* free result set */
+                    mysqli_free_result($is_query_run);
+                }else{
+                    echo "query not executed";
+                }
+                ?>
             </div>
         </div>
         <div class="menu-cat-tab">
@@ -89,6 +163,31 @@ require 'category/includes/vticket.db.php';
                 <a href="category/local.php"><h4>See all</h4></a>
             </div>
             <div class="menu-cat-tab-main">
+                <?php
+                /* fetching data from 'locals' table */
+                $query= 'SELECT * FROM `locals`';
+                if($is_query_run = mysqli_query($conn,$query)){
+                    echo '<div class="menu-cat-content">';
+                    $i = 0;
+                    while ($row = mysqli_fetch_assoc($is_query_run)) {
+                        if($i < 6){
+                            echo '<div class="menu-cat-content-container"> ';
+                            echo '<a href="category/detail.php?cat=loc&id='.$row["id"].'"><img src="category/'.$row["Image_dir"].'" alt=""></a>';
+                            echo '<div class="menu-cat-content-text-container">';
+                            echo '<div class="menu-cat-content-text">'.$row["title"];
+                            echo '</div> ';
+                            echo '</div> ';
+                            echo '</div> ';
+                        }
+                        $i++;
+                    }
+                    echo '</div>';
+                    /* free result set */
+                    mysqli_free_result($is_query_run);
+                }else{
+                    echo "query not executed";
+                }
+                ?>
 
             </div>
         </div>
