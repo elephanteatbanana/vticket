@@ -36,7 +36,7 @@ require 'includes/vticket.db.php';
     <!--Main-->
     <div>
         <!--Nav-->
-        <ul id="listTab" class="menu-category">
+        <ul class="menu-category">
             <li class="menu-category-name concertsTab" rel="concertsPanel"> <a href="concert.php">Concerts</a></li>
             <li class="menu-category-name sportsTab" rel="sportsPanel"> <a href="sport.php">Sports</a></li>
             <li class="menu-category-name artsTab" rel="artsPanel"> <a href="art.php">Arts</a></li>
