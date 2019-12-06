@@ -80,12 +80,7 @@ require 'includes/vticket.db.php';
             <button onclick="getData()">Load More</button>
         </div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <p>By continuing past this page, you agree to our Terms of Use.</p>
-            <p>Privacy Policy | 2019 Vticket. All rights reserved.</p>
-        </div>
-    </footer>
+    
 </body>
 <script>
     var from = 0;
