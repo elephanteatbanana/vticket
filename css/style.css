@@ -81,6 +81,10 @@ div#signupBt {
     width: 80%;
     margin: auto;
 }
+#signUpWindow div{
+    margin-top: 1px;
+    margin-bottom: 1px; 
+}
 
 .home-main {
     width: 100%;
@@ -110,7 +114,9 @@ div#signupBt {
     width: 100%;
     display: block;
 }
-
+.home-main-media-overlay-container{
+    margin-bottom: 1rem;    
+}
 .home-main-media-overlay-content {
     border: 1.5px solid;
     box-shadow: 1px 2px #888888;
@@ -123,7 +129,6 @@ div#signupBt {
 }
 
 .card {
-
     border-top: 2px solid #009973;
     width: 90%;
     margin: auto;
@@ -318,7 +323,80 @@ div#signupBt {
     flex-direction: column;
     justify-content: center;
 }
+/*detail.php */
+detail-window{
+    height: auto;
+    max-height: 200px;
+    display: flex;
+    background-color: #009973;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
+}
+.detail-event-image-container{
+    width: 40%;
+    margin: 1rem;
+}
+.detail-event-image{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px #afd4cc;
+}
+.detail-event-title-container{
+    text-align: center;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+.detail-event-title-container h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.detail-event-title-container h4{
+    margin-top: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.detail-bookingbt-container{
+    width: 30%;
+    margin: auto;
+}
+.detail-bookingbt-container button{
+    width: 90%;
+    border-radius: 6px;
+    height: 1.5rem;
+    box-shadow: 1px 2px #888888;
+    margin: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+}
+.description{
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+/* myPage.php */
+.mypage-bookinglist-container h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2rem;
+}
+.mypage-list-ul{
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    text-align: center;
+}
+.mypage-list-ul li{
+    list-style-type: decimal;
+    font-family: Averta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-bottom: 1rem;
+    color: #8d9291;
+}
+.mypage-list-ul li a{
+    text-decoration: none;
+    color: #8d9291;
+    text-align: center;
+}
 /* mobile-landscape */
 
 @media screen and (min-width: 480px) {}
@@ -326,6 +404,8 @@ div#signupBt {
 /* tablet-portrait */
 
 @media screen and (min-width: 768px) {
+
+    /* Home.html */
     .home-main-media-container {
         position: relative;
     }
@@ -346,8 +426,29 @@ div#signupBt {
     #header-logo a img{
         margin-left: 1.2rem;
     }
+    /* menu.php */
+    .menu-category{
+        background-color: lightseagreen;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 3.5rem;
+    }
+    .menu-category-name{
+        width: 25%;
+        font-size: 1.5rem;
+    }
+    /* local,sport,art,concert.php */
+    .category-list-ul li a{
+        color:#009973;
+        text-decoration: none;
+        display: contents;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
 }
-
 /* tablet-landscape */
 
 @media screen and (min-width: 992px) {
