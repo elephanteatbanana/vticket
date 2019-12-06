@@ -2,7 +2,8 @@
 
 const getEmail = document.getElementById('emailId');
 const getPass = document.getElementById('passwordId');
-
+// userName -> user's name : initial value : null
+var userName;
 const getSignUpEmail = document.getElementById('signUpemailId');
 const getSignUpName = document.getElementById('signUpnameId');
 const getSignUpPass = document.getElementById('signUppassword');
