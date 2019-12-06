@@ -1,3 +1,5 @@
+/* mobile up to 768px*/
+
 /* Generic */
 body {
     margin: 0;
@@ -399,12 +401,14 @@ detail-window{
 }
 /* mobile-landscape */
 
-@media screen and (min-width: 480px) {}
+/* uncomment if needed to change @media screen and (min-width: 480px) {}*/
 
 /* tablet-portrait */
 
 @media screen and (min-width: 768px) {
-
+    h3{
+        font-size: 2rem;
+    }
     /* Home.html */
     .home-main-media-container {
         position: relative;
@@ -426,6 +430,10 @@ detail-window{
     #header-logo a img{
         margin-left: 1.2rem;
     }
+    .card{
+        border-top: 10px solid #009973;
+        
+    }
     /* menu.php */
     .menu-category{
         background-color: lightseagreen;
@@ -439,6 +447,21 @@ detail-window{
         font-size: 1.5rem;
     }
     /* local,sport,art,concert.php */
+    .category-list-ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category-list-ul .category-event{
+        padding-top: 0;
+    }
+    .category-list-ul img{
+        width: 30%;
+        height: auto;
+    }
+    .category-list-ul li{
+        width: 70%;
+        text-align: center;
+    }
     .category-list-ul li a{
         color:#009973;
         text-decoration: none;
@@ -447,6 +470,43 @@ detail-window{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: baseline;
+    }
+    .category-list-ul li a p:nth-child(1) {
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    .category-list-ul li a p:nth-child(2) {
+        font-size: 1.2rem;
+        width: 100%;
+
+    }
+    .category-list-ul li a p:nth-child(3){
+        font-size: 1rem;
+        width: 100%;
+        margin: 0;
+    }
+    .category-list-ul li a p:nth-child(4){
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .category-event{
+        width:50%;
+        display: inline-flex;
+    }
+    .footer-content{
+        font-size: 1.2rem;
+    }
+    .menu-cat-content-container{
+        width: 30%;
+        margin: 1rem;
+        position: relative;
+        min-width: 300px;
+        
+    }
+    .mypage-list-ul {
+        width: 50%;
+        margin: auto;
     }
 }
 /* tablet-landscape */
