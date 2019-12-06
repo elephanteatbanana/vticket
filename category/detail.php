@@ -188,6 +188,12 @@ echo "</div>";
 ?>
         </div>
     </div>
+    <footer>
+    <div class="footer-content">
+        <p>By continuing past this page, you agree to our Terms of Use.</p>
+        <p>Privacy Policy | 2019 Vticket. All rights reserved.</p>
+    </div>
+    </footer>   
 </body>
 <script src="../javascript/init-firebase.js"></script>
 <script>
