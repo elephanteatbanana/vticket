@@ -222,6 +222,7 @@ div#signupBt {
     opacity: 1;
     width: 100%;
     margin: auto;
+    max-height: 150px;
     border-radius: 8px;
     transition: .5s ease;
 }
@@ -446,6 +447,10 @@ detail-window{
         width: 25%;
         font-size: 1.5rem;
     }
+    .menu-cat-content a img{
+
+        max-height: 250px;
+    }
     /* local,sport,art,concert.php */
     .category-list-ul{
         display: flex;
@@ -467,7 +472,7 @@ detail-window{
         text-decoration: none;
         display: contents;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: baseline;
     }
