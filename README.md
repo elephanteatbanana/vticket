@@ -1,53 +1,62 @@
 ![Alt text](/category/images/main.png?raw=true "Optional Title")
 
-# Project Title
+# Vticket
 
-One Paragraph of project description goes here
+Online ticket booking web site.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
+This application will be run in XAMPP. 
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+1.Download and Install XAMPP
 
 ```
-Give the example
+https://www.apachefriends.org/download.html
 ```
 
-And repeat
+2.Start all the XAMPP-VM services
 
 ```
-until finished
+https://www.apachefriends.org/blog/new_xampp_20170628.html
+```
+3.Import 'v_database.sql' in 'sql' folder in MySQL
+
+### Installing and running
+
+
+1.Navigate to xampp htdocs folder.
+```
+cd /Users/{** youruser name**}/.bitnami/stackman/machines/xampp/volumes/root/htdocs
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+2.Download or clone the project.
+```
+git clone https://github.com/elephanteatbanana/vticket.git
+```
+3.Open your prefered browser and go to the link below (Use your localhost).
 
-## Running the tests
+```
+http://localhost/vticket-master/home.html
 
-Explain how to run the automated tests for this system
+```
 
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* Application front end is designed using Bootstrap, jQuery, AJAX.
+
+* PHP is used for building the backend.
+
+* Apache HTTP server used to serve the web application.
+
+* MySQL,Firebase is used as the database.
+
 
 
 ## Versioning
