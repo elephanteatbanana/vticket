@@ -2,7 +2,14 @@
 
 # Vticket
 
-Online ticket booking web site.
+Vticket is an online ticket booking web portal based on one-click booking mechanism .
+
+# Features
+
+* Sign-up, sign-in and reset password
+* Display many events(concerts, sporting events, art events and local events)
+* Book events with an easy booking mechanism
+
 
 ## Getting Started
 
@@ -42,6 +49,9 @@ git clone https://github.com/elephanteatbanana/vticket.git
 http://localhost/vticket-master/home.html
 
 ```
+
+Test account : hi@vticket.ca   
+password:123456
 
 
 
