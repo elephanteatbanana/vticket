@@ -280,6 +280,30 @@ input#add-submit{
         width: 25%;
         font-size: 1.9rem;
     }
+    .admin-cat-form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .admin-cat-list{
+        width: 50%;
+        display: inline-flex;
+    }
+    .admin-cat-list-image {
+        width: 30%;
+        height: auto;
+        margin: auto;
+    }
+    .admin-cat-list-image img{
+        width: 100%;
+        height: auto;
+    }
+    .admin-cat-list-title{
+        width: 70%;
+        text-align: center;
+    }
+    .admin-cat-list-title a{
+        font-size: 1.5rem;
+    }
 }   
 /* tablet-landscape */
 @media screen and (min-width: 992px) {
