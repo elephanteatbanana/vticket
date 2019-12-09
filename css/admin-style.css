@@ -84,3 +84,22 @@ header.admin-login-header{
     color: #44324d;
     margin-right: 1rem;
 }
+.admin-main-category{
+    background-color: #44324d;
+    width: 100%;
+    height: 2.5rem;
+}
+.admin-main-category-name{
+    float: left;
+    width: 25%;
+}
+.admin-main-category-name a{
+    display: block;
+    color: white;
+    padding: 1rem 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+.admin-main-category-name a:hover{
+    color:purple;
+}
