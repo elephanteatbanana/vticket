@@ -103,3 +103,15 @@ header.admin-login-header{
 .admin-main-category-name a:hover{
     color:purple;
 }
+/* tablet-portrait */
+@media screen and (min-width: 768px) {
+
+}
+/* tablet-landscape */
+@media screen and (min-width: 992px) {
+
+}
+/* laptops */
+@media screen and (min-width: 1200px) {
+ 
+}
