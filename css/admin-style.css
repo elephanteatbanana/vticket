@@ -305,11 +305,11 @@ input#add-submit{
         font-size: 1.5rem;
     }
 }   
-/* tablet-landscape */
+/* tablet-landscape 
 @media screen and (min-width: 992px) {
-    
 }
-/* laptops */
+*/
+/* laptops 
 @media screen and (min-width: 1200px) {
- 
 }
+*/
