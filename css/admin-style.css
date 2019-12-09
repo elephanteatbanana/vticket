@@ -131,6 +131,17 @@ input#add-submit{
     margin-top: 1rem;
 }
 
+
+#catPanel{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#catPanel div{
+    margin-bottom: 1rem;
+}
+
 /* tablet-portrait */
 @media screen and (min-width: 768px) {
 
