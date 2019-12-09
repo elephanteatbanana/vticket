@@ -255,10 +255,6 @@ input#add-submit{
 
 /* tablet-portrait */
 @media screen and (min-width: 768px) {
-
-}
-/* tablet-landscape */
-@media screen and (min-width: 992px) {
     footer.admin-detail-footer{
         position: absolute;
         bottom: 0;
@@ -266,8 +262,18 @@ input#add-submit{
         height: 2.5rem;  
         margin-top: 100px;
         background-color: #44324d;
-    
     }
+    h3{
+        font-size: 2rem;
+    }
+    .add-delete{
+        width: 50%;
+        margin: auto;
+    }
+}   
+/* tablet-landscape */
+@media screen and (min-width: 992px) {
+    
 }
 /* laptops */
 @media screen and (min-width: 1200px) {
