@@ -73,3 +73,14 @@ header.admin-login-header{
     width:10%;
     display: contents;
 }
+
+/*menu.php */
+.admin-main-logo-icon{
+    width:10%;
+    display: contents;
+}
+.fas{
+    font-size: 2rem;
+    color: #44324d;
+    margin-right: 1rem;
+}
