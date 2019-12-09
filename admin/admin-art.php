@@ -1,3 +1,7 @@
+<?php
+include_once '../category/includes/vticket.db.php';
+$result = "";
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
