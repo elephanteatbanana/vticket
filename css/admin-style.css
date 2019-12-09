@@ -175,6 +175,54 @@ input#add-submit{
     
 }
 /* admin-detail.php */
+
+
+.admin-cat-list{
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.admin-cat-list-image{
+    width: 30%;
+}
+.admin-cat-list-title{
+    width: 70%;
+    text-align: center;
+}
+.admin-cat-list-title a p{
+    margin: 0;
+    color: #9c9a9a;
+    font-family: Averta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.admin-cat-list-title a p:nth-child(1){
+    font-size: 1.2rem;
+    color: #363636;
+}
+.admin-cat-list-title a p:nth-child(4){
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    
+}
+.admin-cat-list img{
+    width: 100%;
+    height: auto;   
+}
+.admin-cat-list a{
+    color:#009973;
+    font-size: 1.2rem;
+    text-decoration-line: none;
+}
+.admin-cat-add-input{
+    clear: both;
+    width: 90%;
+    padding-left:10%;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
+}
+.admin-cat-container{
+    width: 90%;
+    margin: auto;
+}
 /* tablet-portrait */
 @media screen and (min-width: 768px) {
 
