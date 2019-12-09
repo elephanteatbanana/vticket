@@ -91,6 +91,7 @@ $result = "";
 
                 </form>
             </div>
+            <?php echo $result; ?>
         </div>
         <div class="admin-cat-container">
             <h3>Concerts</h3>
