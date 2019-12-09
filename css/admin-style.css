@@ -125,6 +125,11 @@ input#add-submit{
     height: auto;
     padding-bottom: 0.5rem;
 }
+.popup-add{
+    display: none;
+    width: 100%;
+    margin-top: 1rem;
+}
 
 /* tablet-portrait */
 @media screen and (min-width: 768px) {
