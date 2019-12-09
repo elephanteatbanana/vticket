@@ -18,7 +18,30 @@
     <link rel="stylesheet" href="css/admin-style.css">
 </head>
 <body>
-    
+    <header class="admin-login-header">
+        <div id="admin-header-logo">
+            <a href="admin-login.html"><img src="category/images/logo.png" alt="logo"></a>
+        </div>
+    </header>
+    <div class="admin-login-main">
+        <div class="admin-login-main-content">
+            <h1>ADMIN LOGIN</h1>
+            <!-- Sign In -->
+            <div id="admin-signin">
+                <div class="admin-login-label">
+                    <label for="username"></label>
+                    <input type="text" id="emailId" name="username" placeholder="Email">
+                </div>
+                <div class="admin-login-label">
+                    <label for="password"></label>
+                    <input type="password" id="passwordId" name="password" minlength="8" required placeholder="Password">
+                </div>
+                <input type="submit" value="Login" id="login-button">
+                <div id="loginMessage"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="admin-log-footer"></footer>
 </body>
 <script src="javascript/init-firebase.js"></script>
 <script src="javascript/admin-app.js"></script>
