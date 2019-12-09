@@ -1,6 +1,6 @@
 ![Alt text](/category/images/main.png?raw=true "Optional Title")
 
-# Vticket
+# Vticket v2.0 (December 9th,2019)
 
 Vticket is an online ticket booking web portal based on one-click booking mechanism .
 
@@ -9,6 +9,11 @@ Vticket is an online ticket booking web portal based on one-click booking mechan
 * Sign-up, sign-in and reset password
 * Display many events(concerts, sporting events, art events and local events)
 * Book events with an easy booking mechanism
+
+    -v2.0
+* Administration mode added
+* The adminstrator can add and delete data to/from the database
+
 
 
 ## Getting Started
@@ -50,7 +55,8 @@ http://localhost/vticket-master/home.html
 
 ```
 
-Test account : hi@vticket.ca   
+Test account : hi@vticket.ca 
+Test admin account : admin@vticket.ca  
 password:123456
 
 
