@@ -96,9 +96,12 @@
                 </div>
             </form>
         </div>
-    
+
     </div>
     <footer></footer>
 
 </body>
+<script src="../javascript/init-firebase.js"></script>
+<script src="../javascript/admin.js"></script>
+
 </html>
