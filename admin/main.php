@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/admin-style.css">
 </head>
 <body>
-<div id="admin-main-header-logo">
+    <div id="admin-main-header-logo">
         <a href="main.php"><img src="../category/images/logo.png" alt="logo"></a>
         <div class="admin-menu-header-logo-icons">
             <div class="admin-header-logo-icon" id="signoutBt">
@@ -40,7 +40,8 @@
         </div>
     </div>
 
-
     <footer class="admin-main-footer"></footer>
 </body>
+<script src="../javascript/init-firebase.js"></script>
+<script src="../javascript/admin-main.js"></script>
 </html>
