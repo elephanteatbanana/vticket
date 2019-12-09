@@ -103,6 +103,29 @@ header.admin-login-header{
 .admin-main-category-name a:hover{
     color:purple;
 }
+/* admin-concert,admin-local,admin-sport,admin-art.php */
+#add-form{
+    background-color:rgb(179, 179, 179);
+    border-radius: 6px;
+    text-align: left;
+    border: 2px;
+    font-family : Averta, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#add-form label{
+    font-size: 1.2rem;
+    width: 50%;
+}
+#add-form input{
+    height: 1.2rem;
+    font-size: 0.9rem;
+    
+}
+input#add-submit{
+    font-size: 1.2rem;
+    height: auto;
+    padding-bottom: 0.5rem;
+}
+
 /* tablet-portrait */
 @media screen and (min-width: 768px) {
 
